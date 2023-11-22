@@ -234,7 +234,7 @@ def sqli(s):
     'Operator','Nulls','Hex-dec','Db_info',
     'Roles','Ntwr_cmds','Lang_cmds','Alphabets','Digits','Spl_char']
     plain = pd.DataFrame(feature, columns= feature_names)
-    load_model = pickle.load(open('./svm.pkl', 'rb'))
+    load_model = pickle.load(open('/svm.pkl', 'rb'))
     # Apply model to make predictions
     prediction = load_model.predict(plain)
     #prediction_proba = load_model.predict_proba(X)
